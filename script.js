@@ -1,6 +1,6 @@
 function firstWord(s) {
   let Fs=s.split(' ');
-	let F=`'${Fs[0]}'`;
+	let F=`"${Fs[0]}"`;
 	return F;
 }
 
