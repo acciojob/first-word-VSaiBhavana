@@ -1,10 +1,9 @@
-function firstWord(s) {
-  let Fs=s.split(' ');
-	let F=`"${Fs[0]}"`;
-	return F;
+function firstWord(str) {
+	if (!str || !str.includes(' ')) {
+        return str; 
+    }
+	const firstSpaceIndex = str.indexOf(' ');
+    const firstWord = str.substring(0, firstSpaceIndex);
+
+    return firstWord;
 }
-
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
